@@ -69,63 +69,63 @@ Here is the distribution of all characters:
 
 Here is the distribution of all bigrams:
 
-    8f:	36    fk: 36    kd:	36   	4b: 23
-    bg:	23    g9: 23    fm:	20   	ls: 20
-    sx:	20    xq: 20    rk:	18   	mr: 17
-    cj:	16    jo: 16    ty:	16   	9g: 15
-    gl:	15    le: 15    mt:	15   	yr: 15
-    ht:	14    tm: 14    nz:	13   	zs: 13
-    di:	12    6d: 12    ej:	11   	mf: 11
-    7e:	10    ah: 10    hm:	10   	jc: 10
-    16:  8    bn:  8    ng:  8   	q8:  8
-    dl:  7    sl:  7    9a:  6   	ef:  6
-    k4:  6    49:  5    92:  5   	dh:  5
-    gn:  5    ip:  5    kc:  5   	mn:  5
-    ns:  5    pu:  5    3a:  4   	5h:  4
-    9h:  4    af:  4    b4:  4   	c8:  4
-    f8:  4    g8:  4    ha:  4   	ov:  4
-    pw:  4    qm:  4    sb:  4   	wu:  4
-    07:  3    5a:  3    70:  3   	7c:  3
-    96:  3    9l:  3    a3:  3   	cc:  3
-    d6:  3    dm:  3    el:  3   	g4:  3
-    j8:  3    k8:  3    lq:  3   	m7:  3
-    ma:  3    qj:  3    r4:  3   	u9:  3
-    27:  2    38:  2    6g:  2   	6l:  2
-    81:  2    83:  2    9f:  2   	9p:  2
-    c6:  2    d4:  2    d7:  2   	d8:  2
-    dn:  2    dp:  2    e4:  2   	e7:  2
-    e8:  2    e9:  2    ff:  2   	i8:  2
-    ib:  2    in:  2    l8:  2   	o8:  2
-    o9:  2    oe:  2    oh:  2   	ol:  2
-    om:  2    qc:  2    r1:  2   	rc:  2
-    s4:  2    sz:  2    vh:  2   	zx:  2
-    03:  1    05:  1    10:  1   	1b:  1
-    21:  1    22:  1    23:  1   	26:  1
-    29:  1    2c:  1    34:  1   	35:  1
-    3b:  1    \n:  1    43:  1   	44:  1
-    45:  1    69:  1    6b:  1   	6f:  1
-    6o:  1    84:  1    85:  1   	90:  1
-    98:  1    9e:  1    9m:  1   	;d:  1
-    a1:  1    a2:  1    a4:  1   	ao:  1
-    c1:  1    c5:  1    c9:  1   	cn:  1
-    d1:  1    d3:  1    d5:  1   	d9:  1
-    dc:  1    df:  1    dg:  1   	ds:  1
-    e1:  1    f9:  1    fc:  1   	fh:  1
-    fi:  1    fn:  1    gc:  1   	i1:  1
-    i2:  1    i4:  1    i9:  1   	ie:  1
-    ii:  1    jq:  1    k7:  1   	kf:  1
-    ki:  1    kr:  1    l5:  1   	li:  1
-    ll:  1    m4:  1    m8:  1   	o4:  1
-    o6:  1    oa:  1    on:  1   	ot:  1
-    po:  1    q4:  1    q7:  1   	q9:  1
-    qf:  1    ql:  1    qq:  1   	qv:  1
-    qx:  1    rb:  1    rf:  1   	ri:  1
-    rl:  1    rm:  1    ro:  1   	rs:  1
-    rw:  1    s6:  1    s7:  1   	s8:  1
-    s9:  1    sm:  1    u4:  1   	u7:  1
-    u8:  1    uf:  1    ug:  1   	ul:  1
-    v4:  1    vb:  1    vn:  1   	vo:  1
-    wp:  1    xb:  1    xg:  1   	xv:  1
+    8f: 36    fk: 36    kd: 36    4b: 23
+    bg: 23    g9: 23    fm: 20    ls: 20
+    sx: 20    xq: 20    rk: 18    mr: 17
+    cj: 16    jo: 16    ty: 16    9g: 15
+    gl: 15    le: 15    mt: 15    yr: 15
+    ht: 14    tm: 14    nz: 13    zs: 13
+    di: 12    6d: 12    ej: 11    mf: 11
+    7e: 10    ah: 10    hm: 10    jc: 10
+    16:  8    bn:  8    ng:  8    q8:  8
+    dl:  7    sl:  7    9a:  6    ef:  6
+    k4:  6    49:  5    92:  5    dh:  5
+    gn:  5    ip:  5    kc:  5    mn:  5
+    ns:  5    pu:  5    3a:  4    5h:  4
+    9h:  4    af:  4    b4:  4    c8:  4
+    f8:  4    g8:  4    ha:  4    ov:  4
+    pw:  4    qm:  4    sb:  4    wu:  4
+    07:  3    5a:  3    70:  3    7c:  3
+    96:  3    9l:  3    a3:  3    cc:  3
+    d6:  3    dm:  3    el:  3    g4:  3
+    j8:  3    k8:  3    lq:  3    m7:  3
+    ma:  3    qj:  3    r4:  3    u9:  3
+    27:  2    38:  2    6g:  2    6l:  2
+    81:  2    83:  2    9f:  2    9p:  2
+    c6:  2    d4:  2    d7:  2    d8:  2
+    dn:  2    dp:  2    e4:  2    e7:  2
+    e8:  2    e9:  2    ff:  2    i8:  2
+    ib:  2    in:  2    l8:  2    o8:  2
+    o9:  2    oe:  2    oh:  2    ol:  2
+    om:  2    qc:  2    r1:  2    rc:  2
+    s4:  2    sz:  2    vh:  2    zx:  2
+    03:  1    05:  1    10:  1    1b:  1
+    21:  1    22:  1    23:  1    26:  1
+    29:  1    2c:  1    34:  1    35:  1
+    3b:  1    \n:  1    43:  1    44:  1
+    45:  1    69:  1    6b:  1    6f:  1
+    6o:  1    84:  1    85:  1    90:  1
+    98:  1    9e:  1    9m:  1    ;d:  1
+    a1:  1    a2:  1    a4:  1    ao:  1
+    c1:  1    c5:  1    c9:  1    cn:  1
+    d1:  1    d3:  1    d5:  1    d9:  1
+    dc:  1    df:  1    dg:  1    ds:  1
+    e1:  1    f9:  1    fc:  1    fh:  1
+    fi:  1    fn:  1    gc:  1    i1:  1
+    i2:  1    i4:  1    i9:  1    ie:  1
+    ii:  1    jq:  1    k7:  1    kf:  1
+    ki:  1    kr:  1    l5:  1    li:  1
+    ll:  1    m4:  1    m8:  1    o4:  1
+    o6:  1    oa:  1    on:  1    ot:  1
+    po:  1    q4:  1    q7:  1    q9:  1
+    qf:  1    ql:  1    qq:  1    qv:  1
+    qx:  1    rb:  1    rf:  1    ri:  1
+    rl:  1    rm:  1    ro:  1    rs:  1
+    rw:  1    s6:  1    s7:  1    s8:  1
+    s9:  1    sm:  1    u4:  1    u7:  1
+    u8:  1    uf:  1    ug:  1    ul:  1
+    v4:  1    vb:  1    vn:  1    vo:  1
+    wp:  1    xb:  1    xg:  1    xv:  1
     y9:  1
 
 The single character distribution is alarming, but the bigram
@@ -193,26 +193,28 @@ verify our answers on our own boxes before shipping it up.  So here is
 the pukey python that we used to bruteforce the the remaining flag
 possibilities.
 
-    from itertools import permutations
-    from hashlib import sha256
+```python
+from itertools import permutations
+from hashlib import sha256
 
-    def test(s):
-      e = '9f2a579716af14400c9ba1de8682ca52c17b3ed4235ea17ac12ae78ca24876ef'
-      return sha256('ASIS_' + s).hexdigest() == e
+def test(s):
+  e = '9f2a579716af14400c9ba1de8682ca52c17b3ed4235ea17ac12ae78ca24876ef'
+  return sha256('ASIS_' + s).hexdigest() == e
 
-    m = '3c6a1c371b381c943065864b95ae5546'
-    s = '12456789x'
-    for p in permutations(s):
-      def f(sub, c):
-          if c in sub:
-              return sub[c]
-          else:
-              return c
-      sub = {c : d for c, d in zip(s, p)}
-      z = ''.join(f(sub, c) for c in m)
-      if test(z):
-          print z
-          break
+m = '3c6a1c371b381c943065864b95ae5546'
+s = '12456789x'
+for p in permutations(s):
+    def f(sub, c):
+        if c in sub:
+            return sub[c]
+        else:
+            return c
+    sub = {c : d for c, d in zip(s, p)}
+    z = ''.join(f(sub, c) for c in m)
+    if test(z):
+        print z
+        break
+```
 
 And it dumps out the flag!
 
