@@ -6,5 +6,4 @@ Batman's Kitchen came in 10th place with 2013 points.
 
 Write Ups:
 * Rookie Agent
-* pcap
-* ~Windows
+* Cryptor
