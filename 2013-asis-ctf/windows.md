@@ -8,14 +8,14 @@ pictures of windows flashing across the screen with a strange soundtrack
 ([here](windows_assets/windows.png) is a frame from that video).
 
 ## Analysis
-Let's start with the audio. Pull out the audio with
+Let's start with the audio. Pull out the audio with ffmpeg.
 
     ffmpeg -i windows.mp4 windows.wav
 
 The audio sounds like it's something in reverse, and opening it up in Audacity
 and reversing it confirms this. It's a man's voice saying
 `51324984652187698521487459648201`. This is 32 characters, so it could be an
-md5 hash, but appending that to ASIS\_' isn't correct flag, so we're not done
+md5 hash, but appending that to `ASIS_` isn't correct flag, so we're not done
 yet.
 
 Now we look at the video. If you stare at it for awhile, it looks like the
@@ -35,9 +35,9 @@ code (we've seen enough of those before in other CTFs, turns out this one was
 a Version 1 QR code, which is 21x21). The QR scanner apps on our phones
 couldn't quite read it, so we had to fudge it into a more readable state in
 GIMP with creative selections and scaling (in particular, I selected all of
-the black with the color picker tool, grew the selection by 5 pixels, then
-shrank it by 3, then flood filled black, then scaled it down to 21x21 without
-interpolation).
+the white with the color picker tool, inverted the selection, grew the
+selection by 5 pixels, then shrank it by 3, then flood filled black, then
+scaled it down to 21x21 without interpolation).
 
 The final result is [here](windows_assets/windows_qr_after.png).
 
