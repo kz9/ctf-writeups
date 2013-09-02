@@ -4,8 +4,9 @@
 Append what you find to "ASIS\_" and send that as flag.
 
 An [mp4 video](windows_assets/windows.mp4) is attached. It's a video of small
-pictures of windows flashing across the screen with a strange soundtrack
-([here](windows_assets/windows.png) is a frame from that video).
+pictures of windows flashing across the screen with a strange soundtrack.
+
+![Example Frame](windows_assets/windows.png)
 
 ## Analysis
 Let's start with the audio. Pull out the audio with ffmpeg.
@@ -30,8 +31,12 @@ can scroll a frame at a time in GIMP.
 
 Only the first frame of the generated GIF has the black background, so we
 delete that with the color picker tool, and we can see that it was indeed a
-pattern. In fact, [it looks like](windows_assets/windows_qr_before.png) a QR
-code (we've seen enough of those before in other CTFs, turns out this one was
+pattern.
+
+![QR looking image](windows_assets/windows_qr_before.png)
+
+
+It's a QR code (we've seen enough of those before in other CTFs, turns out this one was
 a Version 1 QR code, which is 21x21). The QR scanner apps on our phones
 couldn't quite read it, so we had to fudge it into a more readable state in
 GIMP with creative selections and scaling (in particular, I selected all of
@@ -39,7 +44,7 @@ the white with the color picker tool, inverted the selection, grew the
 selection by 5 pixels, then shrank it by 3, then flood filled black, then
 scaled it down to 21x21 without interpolation).
 
-The final result is [here](windows_assets/windows_qr_after.png).
+![QR after formatting](windows_assets/windows_qr_after.png).
 
 The QR code encodes the message "xorwith313". So we xor the above number
 with 313
