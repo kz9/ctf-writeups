@@ -9,7 +9,9 @@ pictures of windows flashing across the screen with a strange soundtrack
 
 ## Analysis
 Let's start with the audio. Pull out the audio with
+
     ffmpeg -i windows.mp4 windows.wav
+
 The audio sounds like it's something in reverse, and opening it up in Audacity
 and reversing it confirms this. It's a man's voice saying
 `51324984652187698521487459648201`. This is 32 characters, so it could be an
@@ -23,7 +25,9 @@ which the windows appear.
 
 In order to get a better look at it, we can turn the video into a GIF so we
 can scroll a frame at a time in GIMP.
+
     ffmpeg -i windows.mp4 windows.gif
+
 Only the first frame of the generated GIF has the black background, so we
 delete that with the color picker tool, and we can see that it was indeed a
 pattern. In fact, [it looks like](windows_assets/windows_qr_before.png) a QR
@@ -39,5 +43,7 @@ The final result is [here](windows_assets/windows_qr_after.png).
 
 The QR code encodes the message "xorwith313". So we xor the above number
 with 313
+
     51324984652187698521487459648201 ^ 313 = 51324984652187698521487459648496
-The flag is "ASIS\_51324984652187698521487459648496".
+
+The flag is `ASIS_51324984652187698521487459648496`.

@@ -235,4 +235,4 @@ for g in range(32, 512 + 32):
 
 Once we have the key, we just plug it into the decryption code, and we indeed
 get a PNG. Open it up, and it's the flag
-"ASIS_449e435e4c40dfa726f11b83a07b5471".
+`ASIS_449e435e4c40dfa726f11b83a07b5471`.
