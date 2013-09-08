@@ -115,8 +115,8 @@ ciphertext.
     htm:  G    5a3:  Y    ipu:  Q    nzs:  H
     b4:   Z
 
-(This is actually resorted from our original table, and the Unicode is a
-side effect of inter team trolling)
+(This is actually our original table that we produced, and the Unicode is a
+side effect of team member trolling)
 
 We get this text (with the special characters replaced and newlines added for
 reading cleanliness, this is 272 characters).
