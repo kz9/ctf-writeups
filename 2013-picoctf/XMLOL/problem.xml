@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="tmpWdc4fR_files/intl.css" type="text/css"?>
+<parsererror xmlns="http://www.mozilla.org/newlayout/xml/parsererror.xml">XML Parsing Error: not well-formed
+Location: https://2013.picoctf.com/autoproblems/tmpWdc4fR.xml
+Line Number 3, Column 3:<sourcetext>  &lt;writing&gt;
+--^</sourcetext></parsererror>
