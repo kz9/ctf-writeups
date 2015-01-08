@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Tue Dec 23 02:48:53 2014
+Invocation: foremost spamcarver.jpg 
+Output directory: /home/maimai/ctf/CTF-simple-writeups/picoCTF2013/Spamcarver/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: spamcarver.jpg
+Start: Tue Dec 23 02:48:53 2014
+Length: 62 KB (64023 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00000000.jpg 	      50 KB 	          0 	 
+1:	00000101.zip 	      11 KB 	      52110 	 
+Finish: Tue Dec 23 02:48:53 2014
+
+2 FILES EXTRACTED
+	
+jpg:= 1
+zip:= 1
+------------------------------------------------------------------
+
+Foremost finished at Tue Dec 23 02:48:53 2014
