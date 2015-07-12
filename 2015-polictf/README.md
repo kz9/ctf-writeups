@@ -1,4 +1,4 @@
-# PoliCTF 3DOGES2 400
+# PoliCTF 2015 3DOGES2 400
 
 Unfortunately I wasn't able to solve this problem during the competition...
 
