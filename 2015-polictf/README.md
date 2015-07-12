@@ -6,7 +6,7 @@ First glance through the code it's using TripleDES to encrypt data
 
 Digging around the code a bit, I found this part of the code particularly interesting, especially with the comment...
 
-    ```
+    ```golang
     func muchSecurity(key []byte) []byte {
     var tripleDOGESKey []byte
 
@@ -25,7 +25,8 @@ Digging around the code a bit, I found this part of the code particularly intere
     }
     ```
 
-OK, let's figure out how Complex is "good" then. I'll skip the math here, but suppose you have a byte represented by WXABCDYZ, where each alphabet represents a binary digit.
+OK, let's figure out how Complex is "good" then. I'll skip the math here. 
+But suppose you have a byte represented by WXABCDYZ, where each alphabet represents a binary digit.
 Then after the "Complex" transformation, we get (B^C)(suchSubstitution[ABCD])ABCDBC. 
 
 Tada~ now we just shrinked our keyspace by a half, instead of having 8 bits of entropy, we have 4 for each byte for the last 8 bytes. 
@@ -33,7 +34,7 @@ But that's still not enough for us to break the code. Since we have no idea of t
 
 Then I went online to look for golang example of using TripleDES, here's what I found 
     
-    ```
+    ```golang
     func main() {
 	// NewTripleDESCipher can also be used when EDE2 is required by
 	// duplicating the first 8 bytes of the 16-byte key.
@@ -61,7 +62,7 @@ used a 40 core AWS instance, it took me 30 minutes to solve it)
 
 Here's my script
 
-    ```
+    ```python
     from Crypto.Cipher import DES
     from pwn import *
     import itertools
