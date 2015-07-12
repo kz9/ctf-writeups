@@ -8,20 +8,20 @@ Digging around the code a bit, I found this part of the code particularly intere
 
 ```go
 func muchSecurity(key []byte) []byte {
-var tripleDOGESKey []byte
+    var tripleDOGESKey []byte
 
-secondKey := make([]byte, 16)
-copy(secondKey, key)
-for i := 8; i < 16; i++ {
-    // Let's be sure it is enough complex. Complex is good, a friend told us so.
-    key[i] = (secondKey[i] & 0x3c) | (suchSubstitution[(secondKey[i] >> 2) & 0x0f] << 6)
-    key[i] |= (key[i] >> 3) & 0x03
-    key[i] |= ((key[i] >> 4) ^ key[i]) << 7
-}
+    secondKey := make([]byte, 16)
+    copy(secondKey, key)
+    for i := 8; i < 16; i++ {
+        // Let's be sure it is enough complex. Complex is good, a friend told us so.
+        key[i] = (secondKey[i] & 0x3c) | (suchSubstitution[(secondKey[i] >> 2) & 0x0f] << 6)
+        key[i] |= (key[i] >> 3) & 0x03
+        key[i] |= ((key[i] >> 4) ^ key[i]) << 7
+    }
 
-// EDE2 is required.
-tripleDOGESKey = append(tripleDOGESKey, key[:8]...)
-return append(tripleDOGESKey, key[:16]...)
+    // EDE2 is required.
+    tripleDOGESKey = append(tripleDOGESKey, key[:8]...)
+    return append(tripleDOGESKey, key[:16]...)
 }
 ```
 
