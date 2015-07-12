@@ -73,7 +73,7 @@ Then I quickly wrote a python script to bruteforce it.
 
 (Unfortunately, my script requires at least 32G of RAM...due to python's ittertools.products storing all the data..., 
 
-and yeah Iused a 40 core AWS instance, it took me 30 minutes to solve it)
+and yeah I used a 40 core AWS instance, it took me 30 minutes to solve it)
 
 Here's my script
 
