@@ -26,10 +26,13 @@ return append(tripleDOGESKey, key[:16]...)
 ```
 
 OK, let's figure out how Complex is "good" then. I'll skip the math here. 
+
 But suppose you have a byte represented by WXABCDYZ, where each alphabet represents a binary digit.
+
 Then after the "Complex" transformation, we get (B^C)(suchSubstitution[ABCD])ABCDBC. 
 
 Tada~ now we just shrinked our keyspace by a half, instead of having 8 bits of entropy, we have 4 for each byte for the last 8 bytes. 
+
 But that's still not enough for us to break the code. Since we have no idea of the first 8 bytes
 
 Then I went online to look for golang example of using TripleDES, here's what I found 
@@ -54,11 +57,23 @@ func main() {
 }
 ```
 
-Hm...This looks a bit different than the one above, the key it uses is constructed by key[:16] + key[:8], but the one we got is constructed by key[:8] + key[:16], I wonder
-what's the difference here... Then I realized that EDE stands for Encrypt-Decrypt-Encrypt...wait a minute! that means they are using the same key for the first round of encryption
-and decryption! Such wow! This means it's just a single round DES with half of the keyspace! great! now we only have 32 bits of entropy, it's bruteforceable! Then I quickly wrote
-a python script to bruteforce it. (Unfortunately, my script requires at least 32G of RAM...due to python's ittertools.products storing all the data..., and yeah I
-used a 40 core AWS instance, it took me 30 minutes to solve it)
+Hm...This looks a bit different than the one above, the key it uses is constructed by key[:16] + key[:8], but the one we got is constructed by key[:8] + key[:16].
+
+I wonder what's the difference here... 
+
+Then I realized that EDE stands for Encrypt-Decrypt-Encrypt...
+
+Wait a minute! that means they are using the same key for the first round of encryption and decryption! Such wow! 
+
+This means it's just a single round DES with half of the keyspace! 
+
+Great! now we only have 32 bits of entropy, it's bruteforceable! 
+
+Then I quickly wrote a python script to bruteforce it. 
+
+(Unfortunately, my script requires at least 32G of RAM...due to python's ittertools.products storing all the data..., 
+
+and yeah Iused a 40 core AWS instance, it took me 30 minutes to solve it)
 
 Here's my script
 
