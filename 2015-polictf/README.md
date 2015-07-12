@@ -6,7 +6,7 @@ First glance through the code it's using TripleDES to encrypt data
 
 Digging around the code a bit, I found this part of the code particularly interesting, especially with the comment...
 
-```golang
+```go
 func muchSecurity(key []byte) []byte {
 var tripleDOGESKey []byte
 
@@ -34,7 +34,7 @@ But that's still not enough for us to break the code. Since we have no idea of t
 
 Then I went online to look for golang example of using TripleDES, here's what I found 
     
-```golang
+```go
 func main() {
     // NewTripleDESCipher can also be used when EDE2 is required by
     // duplicating the first 8 bytes of the 16-byte key.
