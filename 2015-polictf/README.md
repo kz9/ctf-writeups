@@ -147,7 +147,11 @@ print m2
 ```
 
 The DES key is "20a9643bad20f2ad" encoded in hex
-We are able to find out the superkey the challenge is encrypting, which is "Root superpassword", entering that into the program
-we get the flag.
 
-Flag is: flag{!wow-such-flag-much-crypto-amazing}
+We are able to find out the superkey the challenge is encrypting, which is "Root superpassword", entering that into the program
+
+We got the flag!!!!
+
+```
+Flag: flag{!wow-such-flag-much-crypto-amazing}
+```
